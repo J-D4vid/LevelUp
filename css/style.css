@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+@keyframes rgb {
+    0%{
+        box-shadow: 3px -1px 10px 1px rgb(207, 110, 18);
+    }
+    25%{
+        box-shadow: -8px -11px 20px -7px rgb(248, 163, 36);
+    }
+    50%{
+        box-shadow: -8px 7px 20px -7px rgb(248, 182, 36);
+    }
+    75%{
+        box-shadow: 9px 11px 20px -7px rgb(250, 217, 73);
+    }
+    100%{
+        box-shadow: 3px -1px 10px 1px rgb(207, 110, 18);
+    }
+}
+body{
+    background-color: rgb(54, 54, 54);
+}
+.window{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10vh;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 20px;
+    animation-delay: 1s;
+    animation:rgb 3s infinite steps(18) ;
+    
+}
+.art{
+    width: 57%;
+    height: 100%;
+    background:url(library.gif);
+    background-position:right;
+    background-size:var(210%);
+    background-repeat: no-repeat;
+    border-radius: 20px 0px 0px 20px;
+    z-index: 100;
+}
+.form-field{
+    background:linear-gradient(to left, rgb(248, 163, 36), transparent);
+    width: 43%;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+}
+.login{
+    color: #fff;
+}
+.field{
+    margin-top: 8vh;
+
+}
+.form{
+    display: block;
+}
+.fields{
+    width: 70%;
+    height: 4vh;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 2.5vh;
+    margin-top: 2vh;
+}
+.fields:placeholder-shown{
+    text-align: left;
+    padding-left: 2%;
+}
+.bt{
+    margin-top: 4vh;
+    width: 20%;
+    height: 8vh;
+    border-radius: 10px;
+    border: none;
+    transition: 1s;
+    background-color: rgb(233, 197, 38);
+    color: white;
+}
+.bt:hover{
+    transform: scale(0.9);
+}
+.cadastro{
+    position: absolute;
+    top: 75%;
+    left: 60.5%;
+    text-decoration: none;
+    color: #fff;
+}
+.loginL{
+    position: absolute;
+    top: 75%;
+    left: 62.8%;
+    text-decoration: none;
+    color: #fff;
+}
+.cadastro:hover, .loginL:hover{
+    color: rgb(70, 80, 131);
+}
+.title{
+    color: rgb(250, 217, 73);
+    font-size: 2vw;
+    margin-top: 2vh;
+}
+.cadastro-form{
+    display: none;
+}
+@media screen and (max-width:800px),(orientation:portrait) {
+    body{
+        background-position:top;
+        background-image: url(library.gif);
+        background-repeat: no-repeat;
+    }
+    .window{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-70%);
+        width: 80%;
+        height: 50%;
+        animation: none;
+        box-shadow: none;
+    }
+    .title{
+        font-size: 4vh;
+    }
+    .login{
+        font-size: 2vh;
+    }
+    .form-field{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background: rgba(226, 152, 15, 0.76);
+    }
+    .field{
+        margin-top:1vh ;
+    }
+    .fields{
+        margin-bottom: 1vh;
+    }
+    .cadastro{
+        top: 90%;
+        left: 30%;
+        color: #fff;
+    }
+    .loginL{
+        top: 90%;
+        left: 42%;
+        color: #fff;
+    }
+    .bt{
+        margin-top: 1.5vh;
+        height: 7vh;
+    }
+    .art{
+        display: none;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./css/style.css">
+    <title>LevelUp</title>
+    
+</head>
+<body>
+    <section class="window">
+        <section class="art">  
+        </section>
+        <section class="form-field login-form">
+            <h1 class="title"><strong>Level Up</strong></h1>
+            <div class="field">
+                <h2 class="login">Sign-In</h2>
+                <form class="form"action="">
+                    <input class="fields" type="text" name="name" id="name" placeholder="name">
+                    <input type="password" name="senha" id="senha" class="fields" placeholder="password">
+                    <br>
+                    <input type="submit" value=">>" class="bt" formaction="home.html">
+                </form>
+                <br>
+                <a href=""class="cadastro">Cadastre-se</a>
+            </div>
+        </section>
+        <section class="form-field cadastro-form">
+            <h1 class="title"><strong>Level Up</strong></h1>
+            <div class="field">
+                <h2 class="login">Sign-Up</h2>
+                <form class="form"action="">
+                    <input class="fields" type="text" name="name" id="name" placeholder="name">
+                    <input type="email" name="email" class="fields" id="email" placeholder="email">
+                    <input type="password" name="senha" id="senha" class="fields" placeholder="password">
+                    <br>
+                    <input type="submit" value=">>" class="bt" formaction="home.html">
+                </form>
+                <br>
+                <a href=""class="loginL">logar</a>
+            </div>
+        </section>
+    </section>
+    <script>
+        const sULink = document.querySelector('.cadastro')
+        const sILink = document.querySelector('.loginL')
+        const signUp = document.querySelector('.cadastro-form')
+        const signIn = document.querySelector('.login-form')
+
+        sULink.addEventListener('click', (e)=>{
+            e.preventDefault()
+            signIn.style.display = "none"
+            signUp.style.display = "block"
+        })
+
+        sILink.addEventListener('click', (e)=>{
+            e.preventDefault()
+            signUp.style.display = "none"
+            signIn.style.display = "block"
+        })
+    </script>
+</body>
+</html>
