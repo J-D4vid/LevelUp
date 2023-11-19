@@ -11,8 +11,8 @@ verbetes.forEach((verbete) => {
 
         if (tab.classList.contains('current-card')) {
             info.style.display = "block";
-            tab.style.cssText = "pointer-events: none; height:37vh; border-radius: 5px 5px 20px 20px; background-image:url(https://bandnames.cool/static/images/scroll.b8aec9993d23.png);background-position:center;background-size:cover;background-color:transparent; color:black; padding-top:3vh; padding-left:0.5vw; font-family: 'Nanum Brush Script', cursive;";
-            titulo.style.fontFamily = "Nanum Brush Script";
+            tab.style.cssText = "pointer-events: none; height:37vh; border-radius: 5px 5px 20px 20px; background:rgba(22, 22, 22, 0.575); color:white; padding-top:3vh; padding-left:0.5vw; font-family:'Pixelify Sans';"
+
         } else {
             info.style.display = "none";
             tab.style.cssText = "background-color: rgba(0, 0, 0, 0.432);";

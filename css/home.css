@@ -109,14 +109,10 @@ body{
 .info-d{
     padding-left: 1vw;
 }
-.description{
-    font-family: Nanum Brush Script;
-}
 .info-i{
     padding-left:1vw;
     margin-bottom: 1vh;
     list-style-type: none;
-    font-family: Nanum Brush Script;
 }
 .settings{
     width: 4vw;
