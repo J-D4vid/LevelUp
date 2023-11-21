@@ -34,3 +34,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
     })
 })
 })
+
+const sessao = document.querySelector('.body')
+sessao.addEventListener('scroll', ()=>{
+    const shadow = document.querySelector('.abatr')
+    let scrollP = sessao.scrollTop
+    console.log(scrollP)
+    if(scrollP >= 70){
+        shadow.style.display = "block"
+    }else if(scrollP <60){
+        shadow.style.display = "none"
+    }
+    
+})

@@ -50,9 +50,19 @@ body{
     background:linear-gradient(to top,rgba(0, 0, 0, 0.829),rgba(0, 0, 0, 0.829), transparent);
     -ms-overflow-style: none;
     scrollbar-width: none;
+    scroll-snap-align: start 2000px;
 }
 .body::-webkit-scrollbar{
     display: none;
+}
+.abatr{
+    display: none;
+    height: 2vh;
+    width: 65%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.658), transparent);
+    position: sticky;
+    top: 0%;
+    z-index: 100;
 }
 .row-content{
     display:flex;
